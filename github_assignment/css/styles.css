@@ -1,0 +1,77 @@
+body{
+    background-color: azure;
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lulu2{
+    max-width: 20%;
+    height:fit-content;
+    padding: 2%;
+}
+.lulu3{
+    max-width: 30%;
+    height:fit-content;
+    padding: 2%;
+}
+.organize{
+    display:flex;
+    flex-direction: row;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslateblue;
+  }
+  
+  .nav {
+    float: left;
+  }
+  
+  .nav a {
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover:not(.active) {
+    background-color: darkblue;
+  }
+  
+  .active {
+    background-color: lightblue;
+  }
+.lulu{
+    width:100%;
+}
+.parent{
+    display:flex;
+    flex-wrap: wrap;
+}
+.child{
+    flex: 1 0 21%;
+    margin: 5px;
+    color: #811849;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+@media screen and (max-width:800px){
+    .child {
+        flex: 1 0 35%;
+        margin: 5px;
+    }
+    .lulu2{
+        max-width:90%;
+    }
+    .lulu3{
+        max-width: 90%;
+    }
+    .organize{
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
